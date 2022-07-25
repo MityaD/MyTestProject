@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group 'ru.my'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.mvel/mvel
+    implementation 'org.mvel:mvel:2.0-dp4'
+    implementation 'junit:junit:3.8.2'
+// https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0-RC1'
+// https://mvnrepository.com/artifact/junit/junit
+    testImplementation 'junit:junit:4.13.2  '
+
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+
+}
+
+test {
+    useJUnitPlatform()
+}
